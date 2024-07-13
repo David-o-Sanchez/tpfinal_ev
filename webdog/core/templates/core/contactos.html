@@ -1,0 +1,61 @@
+{% extends "core/base.html"%}
+<title>{% block title %} Contactos {% endblock %}</title>
+
+
+
+{% block content %}
+<h2>Contacto</h2> <br>
+<h3>Complete sus datos</h3> <br>
+<form id="formulario">
+    <fieldset>
+        <legend><b>Datos personales</b></legend>
+        
+        <label for="nombre">Apellido y Nombre: <small>*</small>
+            <input type="text" name="apellido-nombre" id="nombre" size="10" maxlength="30">
+        </label>
+        
+        <label for="telef">Telefono: <small>*</small>
+            <input type="text" name="telefono" id="telef" size="10" maxlength="25" >
+        </label>
+        <label for="email"> Correo Electronico: <small>*</small>
+                <input type="text" name="correoElecronico" id="email" size="10" maxlength="30">
+        </label>
+        <label for="raza"> Raza:
+            <input type="text" name="raza" id="raza" size="10" maxlength="30">
+        </label>
+        <label id="tamaño">Tamaño:</label>
+                
+            <input name="peque" type="checkbox">Pequeño
+            
+            <input name="mediano" type="checkbox">Mediano
+
+            <input name="grande" type="checkbox">Grande
+        
+    </fieldset>
+    <fieldset>
+        <legend><b>Consulta</b></legend>
+        <label for="mensaje"> Mensaje:
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </label>
+        <label>¿Como nos conocio?:
+            <select name="conocio" id="conocio">
+                <option value="1">Facebook</option>
+                <option value="2">Instagram</option>
+                <option value="3">Google</option>
+                <option value="4">Recomendacion</option>
+                <option value="5">Otras Redes Sociales</option>
+            </select>
+        </label>
+        <label> Zona de residencia<br>
+            <input type="radio" name="residencia" id="caba" value="1"> CABA
+        </label>    
+        <label>
+            <input type="radio" name="residencia" id="bsas" value="2"> Prov. de Buenos Aires
+        </label>
+    </fieldset>
+    <p id="mensajeError"></p>
+    <input type="submit" value="Enviar Formulario" id="send">
+    <input type="reset" value="Borrar Campos">
+</form>
+{% endblock %}
+

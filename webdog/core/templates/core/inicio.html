@@ -1,0 +1,19 @@
+{% extends "core/base.html"%}
+
+{% block content %}
+{% load static %}
+<article>
+    <!-- <marquee behavior="" direction=""><h2>Bienvenidos a Fochecan</h2></marquee> -->
+    <h2 id="anima">Bienvenidos a FocheCan</h2>
+        <div class="image-container">
+            <img src="{% static 'core/Imagenes/Titi.jpg' %}" alt="">
+        </div>
+    <p>¡El lugar perfecto para aprender a entrenar a tu mejor amigo de cuatro patas!
+            
+            En FocheCan, creemos en el adiestramiento basado en el refuerzo positivo y el respeto mutuo entre tú y tu perro. 
+            Nuestros métodos están respaldados por la ciencia y se adaptan a las necesidades individuales de cada perro y su familia.
+            Nos comprometemos a proporcionarte las herramientas y el apoyo necesarios para convertirte en el mejor líder y compañero para tu perro. ¡Juntos, podemos lograr grandes cosas!
+    </p>
+ </article>
+
+{% endblock %}

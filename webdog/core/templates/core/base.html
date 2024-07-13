@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %} {% endblock %}</title>
+    
+    {% load static %}
+    <link rel="icon" href="{% static 'core/logo/icon.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/Css/style.css' %}" media="screen">
+
+</head>
+<body>
+    <header>
+        <h1>FocheCan</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'inicio' %}" >Inicio</a></li>
+                <li><a href="{% url 'contactos' %}" >Contacto</a></li>
+                <li><a href="{% url 'guarderia' %}" >Guarderia</a></li>
+                <li><a href="{% url 'quienes' %}" >Quienes Somos</a></li>
+                <li><a href="{% url 'historia' %}" >Historia del Perro</a></li>
+                <li><a href="{% url 'servicios' %}" >Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+     {% block content %} {% endblock %}
+        {% comment %} <article>
+            <!-- <marquee behavior="" direction=""><h2>Bienvenidos a Fochecan</h2></marquee> -->
+            <h2 id="anima">Bienvenidos a FocheCan</h2>
+                <div class="image-container">
+                    <img src="{% static 'core/Imagenes/Titi.jpg' %}" alt="">
+                </div>
+            <p>¡El lugar perfecto para aprender a entrenar a tu mejor amigo de cuatro patas!
+                    
+                    En FocheCan, creemos en el adiestramiento basado en el refuerzo positivo y el respeto mutuo entre tú y tu perro. 
+                    Nuestros métodos están respaldados por la ciencia y se adaptan a las necesidades individuales de cada perro y su familia.
+                    Nos comprometemos a proporcionarte las herramientas y el apoyo necesarios para convertirte en el mejor líder y compañero para tu perro. ¡Juntos, podemos lograr grandes cosas!
+            </p>
+         </article> {% endcomment %}
+    </main>
+   
+    <footer>
+        <p>¡Gracias por elegir a FocheCan para ayudarte en el viaje de adiestrar a tu perro y fortalecer la relación para toda la vida!</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="{% static 'core/logo/facebook.png' %}" alt="Facebook"></a>
+              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><img src="{% static 'core/logo/whatsapp.png' %}" alt="WhatsApp"></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="{% static 'core/logo/instagram.png' %}" alt="Instagram"></a>
+              <a href="https://www.gmail.com/" target="_blank" rel="noopener noreferrer"><img src="{% static 'core/logo/gmail.png' %}" alt="Gmail"></a>
+            </div>
+    </footer>
+
+</body></html>
+
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Mi web personal {% endblock %}</title>
+</head>
+<body>
+    <!--- Cabecera y menu-->
+    <h1>Mi web personal</h1>
+    <ul>
+        <li><a href="{% url 'inicio' %}">Portada</a></li>
+        <li><a href="{% url 'contactos' %}">Contactos</a></li>
+        <li><a href="{% url 'guarderia' %}">Guarderia</a></li>
+        <li><a href="{% url 'historia' %}">Historia</a></li>
+        <li><a href="{% url 'quienes' %}">Quienes</a></li>
+        <li><a href="{% url 'servicios' %}">Servicios</a></li>
+    </ul>
+
+    <!---- Contenido ---->
+
+    {% block content %} {% endblock %}
+
+</body>
+</html> {% endcomment %}

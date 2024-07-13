@@ -1,0 +1,57 @@
+{% extends "core/base.html"%}
+<title>{% block title %} Historia del Perro {% endblock %}</title>
+
+{% block content %}
+{% load static %}
+<h2>Historia del Perro</h2>
+<article>
+    <div style="display: flex; justify-content: space-around;">
+        <div>
+          <img src="{% static 'core/Imagenes/Leptocyon.jpg' %}" alt="Descripción de la imagen 1" width="200" height="171">
+          <p>Según un trabajo publicado en la revista Science en Noviembre de 2002, un
+            grupo multinacional de científicos encabezados por el prestigioso investigador
+            Peter Savolainen, del Royal Institute of Technology [KTH], Estocolmo - Suecia,
+            estudiaron el análisis secuencial del DNA mitocondrial del pelo de más de
+            1000 perros distribuidos alrededor del mundo, llegando a la inesperada conclusión que compartían el mismo grupo genético. Todos los caninos domésticos descienden de los lobos que habitaron Asia del Este hace más de 15.000
+            años. Se concluyó que los lobos de Eurasia son los antecesores más próximos
+            de los perros.</p>
+        </div>
+        <div>
+          <img src="{% static 'core/Imagenes/Eucyon-davisi-300x225.jpg' %}" alt="Descripción de la imagen 2" width="200" height="171">
+          <p>Este increíble descubrimiento sugiere que los perros de todo el planeta descienden de al menos 5 lobas pudiéndose encontrar sus genes en perros actuales. 
+            El Dr. Savolainen, que basó su tesis en estudios genéticos forenses y de
+            la población especialmente en perros y lobos, menciona que estos resultados
+            pueden aún arrojar mayor información si se amplia el número de perros en
+            regiones geográficas de gran importancia. Es más, posiblemente se pueda
+            establecer en forma precisa el origen y la fecha del primer perro y las rutas
+            por las cuales se diseminó desde Asia del Este hacia el mundo.</p>
+        </div>
+        <div>
+          <img src="{% static 'core/Imagenes/Hesperocyon.jpg' %}" alt="Descripción de la imagen 3" width="200" height="171">
+          <p>Con anterioridad a estos reveladores estudios se aceptaba la teoría que los
+            perros descendían de los caninos salvajes: chacales, lobos, coyotes, zorros,
+            hienas, pero no se pensaba en un origen común y su diseminación por el
+            mundo acompañando al hombre. Konrad Lorenz, etólogo y premio Nobel de
+            Medicina, sostenía que las razas caninas descendían del Chacal y solo algunas
+            de los lobos. Existe un notable parecido entre los chacales y algunas razas
+            de perros pero su comportamiento es sumamente diferente. Sostenía que los
+            molestos chacales dormían en la proximidad de las hogueras, que realizaba
+            el hombre de la prehistoria, para descansar y que actuaban como centinelas
+            con sus aullidos cuando cualquier otra fiera se aproximaba al campamento.</p>
+        </div>
+        <div>
+          <img src="{% static 'core/Imagenes/Borophaginae.jpg' %}" alt="Descripción de la imagen 4" width="200" height="171">
+          <p>Menciona que el inicio de la afinidad debe haber comenzado con la caza y la
+            obtención de la comida. Sin embargo esta teoría está descartada y se acepta
+            que todas las razas de perros descienden de los lobos de Asia y no de otros
+            cánidos salvajes. Lobos y perros, pertenecen al género Canis de la gran familia
+            Canidae. Los primeros miembros de la familia Canidae, datan de hace unos
+            300 millones de años, y los perros surgieron de la evolución del lobo, lo cual se
+            supone que comenzó hace 20.000 a 30.000 años..</p>
+        </div>
+    </div>
+</article>
+
+
+{% endblock %}
+
